@@ -4,6 +4,7 @@ import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ListComponent } from './components/list/list.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { ListItemComponent } from './components/list/list-item/list-item.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -15,7 +16,8 @@ import { ListItemComponent } from './components/list/list-item/list-item.compone
     ListItemComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatCardModule,
   ],
   exports:[
     DashboardComponent,
