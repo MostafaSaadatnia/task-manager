@@ -1,26 +1,19 @@
-<mat-accordion class="example-headers-align">
-    <mat-expansion-panel [expanded]="isExpanded" hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Personal data
-        </mat-panel-title>
-        <mat-panel-description>
-          Type your name and age
-          <mat-icon>account_circle</mat-icon>
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>First name</mat-label>
-        <input matInput>
-      </mat-form-field>
-  
-      <mat-form-field appearance="fill">
-        <mat-label>Age</mat-label>
-        <input matInput type="number" min="1">
-      </mat-form-field>
-      <mat-action-row>
-        <button mat-button color="primary" (click)="nextStep()">Next</button>
-      </mat-action-row>
-    </mat-expansion-panel>
-  </mat-accordion>
+<h2 mat-dialog-title>New Task</h2>
+<mat-dialog-content class="mat-typography">
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+            <mat-label>Title</mat-label>
+            <input matInput placeholder="Ex. Challenge" (input)="fillTitle($event)">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Leave a content</mat-label>
+            <textarea matInput placeholder="Ex. It makes me feel..." (input)="fillContent($event)"></textarea>
+        </mat-form-field>
+    </form>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="newTask()">Complete</button>
+</mat-dialog-actions>

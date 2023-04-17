@@ -1,6 +1,6 @@
 <mat-tab-group>
     <mat-tab label="All">
-        <app-add-task></app-add-task>
+       <button (click)="openNewTaskDialog()">NEW</button>
         <app-list [list]="tasks"></app-list>
     </mat-tab>
     <mat-tab label="In Progress">

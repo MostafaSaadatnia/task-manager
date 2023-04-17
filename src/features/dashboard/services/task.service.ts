@@ -25,5 +25,9 @@ export class TaskService {
 
   allTasks(): Observable<Partial<ITask>[]> {
     return this.tasksSubject.asObservable();
+  } 
+
+  generateId(): number {
+    return this.tasks.length + 1;
   }
 }

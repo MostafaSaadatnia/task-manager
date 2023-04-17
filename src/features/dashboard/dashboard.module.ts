@@ -5,12 +5,14 @@ import { ListComponent } from './components/list/list.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { ListItemComponent } from './components/list/list-item/list-item.component';
 import { MatCardModule } from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { AddTaskComponent } from './components/add-task/add-task.component';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,11 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatTabsModule,
     MatIconModule,
     MatInputModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule,
+    FormsModule
   ],
-  exports:[
+  exports: [
     DashboardComponent,
     ListComponent,
     FilterComponent,

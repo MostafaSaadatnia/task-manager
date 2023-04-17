@@ -8,9 +8,11 @@ import { ITask } from 'src/features/dashboard/models/task';
 })
 export class ListItemComponent {
   @Input() data: Partial<ITask> = {};
-  @Output() done = new EventEmitter<(string | number)>();
+  // @Output() done = new EventEmitter<(string | number)>();
 
-  doneTask(id: (string | number)): void {
-    this.done.emit(id);
+
+
+  doneTask(): void {
+    // this.done.emit(this.data.id);
   }
 }
