@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { ITask } from '../models/task';
 import { DATA_SEED } from '../mock/taskDataSeed';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TaskService {
-  task: BehaviorSubject<Partial<ITask>> = new BehaviorSubject<Partial<ITask>>({});
+  tasksSubject: BehaviorSubject<Partial<ITask>[]> = new BehaviorSubject<Partial<ITask>[]>(DATA_SEED);
   tasks: Partial<ITask>[] = [];
 
   constructor() {
@@ -19,6 +19,11 @@ export class TaskService {
   }
 
   newTask(task: ITask): void {
-    this.task.next(task);
+    this.tasks.push(task);
+    this.tasksSubject.next(this.tasks);
+  }
+
+  allTasks(): Observable<Partial<ITask>[]> {
+    return this.tasksSubject.asObservable();
   }
 }

@@ -8,20 +8,26 @@ import { MatCardModule } from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import { AddTaskComponent } from './components/add-task/add-task.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ListComponent,
     FilterComponent,
-    ListItemComponent
+    ListItemComponent,
+    AddTaskComponent
   ],
   imports: [
     CommonModule,
     MatCardModule,
     MatButtonModule,
     MatTabsModule,
-    MatIconModule
+    MatIconModule,
+    MatInputModule,
+    MatExpansionModule
   ],
   exports:[
     DashboardComponent,
