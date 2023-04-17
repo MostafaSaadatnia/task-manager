@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ITask } from 'src/features/dashboard/models/task';
 
 @Component({
   selector: 'app-list-item',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./list-item.component.scss']
 })
 export class ListItemComponent {
-
+  @Input() data: Partial<ITask> = {};
 }

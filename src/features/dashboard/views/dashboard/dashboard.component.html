@@ -1,1 +1,11 @@
-<app-list></app-list>
+<mat-tab-group>
+    <mat-tab label="All">
+        <app-list [list]="tasks"></app-list>
+    </mat-tab>
+    <mat-tab label="In Progress">
+        <app-list [list]="tasks"></app-list>
+    </mat-tab>
+    <mat-tab label="Done">
+        <app-list [list]="tasks"></app-list>
+    </mat-tab>
+</mat-tab-group>

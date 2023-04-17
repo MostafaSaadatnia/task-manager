@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ITask } from '../../models/task';
 
 @Component({
   selector: 'app-list',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent {
-
+  @Input() list: Partial<ITask>[] = [];
 }
