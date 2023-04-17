@@ -10,6 +10,5 @@ export class ListComponent {
   @Input() list: Partial<ITask>[] = [];
 
   onDoneTask(id: any): void {
-    console.log(id);
   }
 }

@@ -1,1 +1,2 @@
 <app-list-item *ngFor="let item of list" [data]="item" (done)="onDoneTask($event)"></app-list-item>
+<p *ngIf="list.length==0" class="no-content">No content!</p>

@@ -1,12 +1,12 @@
 <h2 mat-dialog-title>New Task</h2>
 <mat-dialog-content class="mat-typography">
-    <form class="example-form">
-        <mat-form-field class="example-full-width">
+    <form class="task-form">
+        <mat-form-field class="task-full-width">
             <mat-label>Title</mat-label>
             <input matInput placeholder="Ex. Challenge" (input)="fillTitle($event)">
         </mat-form-field>
 
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="task-full-width">
             <mat-label>Leave a content</mat-label>
             <textarea matInput placeholder="Ex. It makes me feel..." (input)="fillContent($event)"></textarea>
         </mat-form-field>

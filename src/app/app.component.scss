@@ -1,0 +1,33 @@
+.mobile-simulator{
+    width: 80vh;
+    display: flex;
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 2px solid #fff;
+    height: calc(100vh - 48px);
+    min-width: 320px;
+    justify-content: center;
+    margin: 24px auto;
+    background-color: #f2f2f2;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #757575; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1a1a1a; 
+  }

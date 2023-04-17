@@ -26,7 +26,7 @@ export const DATA_SEED: Partial<ITask>[] = [
         ● The user should be able to filter tasks by completion status (completed or not completed). 
         </p>
         `,
-        title: 'Challenge',
+        title: 'Complete Rest Service',
         creationDate: '2023-04-17',
         status: TaskStatus.InProgress
     },
@@ -43,8 +43,8 @@ export const DATA_SEED: Partial<ITask>[] = [
         ● Using Angular material CSS to implement the designs.  
         </p>
         `,
-        title: 'Challenge',
+        title: 'Tommorow Tasks',
         creationDate: '2023-04-17',
-        status: TaskStatus.Done
+        status: TaskStatus.InProgress
     }
 ];

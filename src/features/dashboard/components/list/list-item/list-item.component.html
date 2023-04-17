@@ -1,4 +1,4 @@
-<mat-card class="example-card">
+<mat-card class="task-card">
     <mat-card-header>
         <mat-card-title>{{data.title}}</mat-card-title>
         <mat-card-subtitle>Status: {{data.status}}</mat-card-subtitle>
@@ -6,7 +6,7 @@
     <mat-card-content [innerHTML]="data.content">
     </mat-card-content>
     <mat-card-actions align="end">
-        <button mat-fab extended color="primary" class="mat-check" (click)="doneTask()">
+        <button *ngIf="data.status != 'Done'" mat-fab extended color="primary" class="done" (click)="doneTask()">
             Done
             <mat-icon>check</mat-icon>
         </button>
