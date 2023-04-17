@@ -6,8 +6,9 @@
     <mat-card-content [innerHTML]="data.content">
     </mat-card-content>
     <mat-card-actions align="end">
-        <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-            <mat-icon>menu</mat-icon>
-          </button>  
+        <button mat-fab extended color="primary" class="mat-check" (click)="doneTask(data.id)">
+            Done
+            <mat-icon>check</mat-icon>
+        </button>
     </mat-card-actions>
 </mat-card>

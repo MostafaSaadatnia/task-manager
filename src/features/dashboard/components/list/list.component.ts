@@ -8,4 +8,8 @@ import { ITask } from '../../models/task';
 })
 export class ListComponent {
   @Input() list: Partial<ITask>[] = [];
+
+  onDoneTask(id: (string | number)): void {
+    
+  }
 }

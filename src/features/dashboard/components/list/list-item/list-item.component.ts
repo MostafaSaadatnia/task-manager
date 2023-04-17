@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ITask } from 'src/features/dashboard/models/task';
 
 @Component({
@@ -8,4 +8,9 @@ import { ITask } from 'src/features/dashboard/models/task';
 })
 export class ListItemComponent {
   @Input() data: Partial<ITask> = {};
+  @Output() done = new EventEmitter<(string | number)>();
+
+  doneTask(id: (string | number)): void {
+    this.done.emit(id);
+  }
 }
