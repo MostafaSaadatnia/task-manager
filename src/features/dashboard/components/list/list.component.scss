@@ -14,13 +14,14 @@
   
   .task-list {
     border: solid 1px #ccc;
-    min-height: 100%;
+    min-height: calc(100vh - 158px);
     background: transparent;
     border-radius: 4px;
-    overflow: hidden;
+    overflow: scroll;
     display: block;
-    overflow: hidden;
-    height: calc(100vh - 158px);
+    // overflow: hidden;
+    height: 100%;
+    padding: 12px 0px;
   }
 
  
