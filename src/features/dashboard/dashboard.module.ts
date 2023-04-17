@@ -5,7 +5,7 @@ import { ListComponent } from './components/list/list.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { ListItemComponent } from './components/list/list-item/list-item.component';
 import { MatCardModule } from '@angular/material/card';
-
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -18,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
   imports: [
     CommonModule,
     MatCardModule,
+    MatButtonModule
   ],
   exports:[
     DashboardComponent,
