@@ -1,6 +1,6 @@
-<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-    <div class="example-box" *ngFor="let item of list" cdkDrag>
-        <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+<div cdkDropList class="task-list" (cdkDropListDropped)="drop($event)">
+    <div class="task-box" *ngFor="let item of list" cdkDrag>
+        <div class="task-custom-placeholder" *cdkDragPlaceholder></div>
         <app-list-item [data]="item"></app-list-item>
     </div>
 </div>
