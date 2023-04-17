@@ -12,6 +12,7 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatExpansionModule,
     MatDialogModule,
-    FormsModule
+    FormsModule,
+    DragDropModule
   ],
   exports: [
     DashboardComponent,

@@ -1,8 +1,6 @@
-.task-card {
-    max-width: 400px;
-    margin: 24px auto!important;
+:host{
+    width: 100%;
 }
-
 .done {
     background-color: green;
     color: #fff;

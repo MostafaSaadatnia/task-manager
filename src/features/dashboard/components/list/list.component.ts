@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ITask } from '../../models/task';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-list',
@@ -9,6 +10,7 @@ import { ITask } from '../../models/task';
 export class ListComponent {
   @Input() list: Partial<ITask>[] = [];
 
-  onDoneTask(id: any): void {
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.list, event.previousIndex, event.currentIndex);
   }
 }
