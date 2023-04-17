@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FashboardComponent } from './views/fashboard/fashboard.component';
 import { DashboardComponent } from './views/dashboard/dashboard.component';
 import { ListComponent } from './components/list/list.component';
 import { FilterComponent } from './components/filter/filter.component';
@@ -10,7 +9,6 @@ import { ListItemComponent } from './components/list/list-item/list-item.compone
 
 @NgModule({
   declarations: [
-    FashboardComponent,
     DashboardComponent,
     ListComponent,
     FilterComponent,
@@ -18,6 +16,12 @@ import { ListItemComponent } from './components/list/list-item/list-item.compone
   ],
   imports: [
     CommonModule
+  ],
+  exports:[
+    DashboardComponent,
+    ListComponent,
+    FilterComponent,
+    ListItemComponent
   ]
 })
 export class DashboardModule { }
